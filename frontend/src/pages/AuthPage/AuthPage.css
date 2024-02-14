@@ -1,0 +1,53 @@
+.auth-page-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #181818;
+    padding: 15px;
+    border-radius: 5px;
+}
+.auth-page-raw-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+    color: white;
+}
+
+.auth-page-input-container p {
+    margin: 0;
+}
+
+.auth-page-input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.auth-page-input-container input {
+
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: #232323;
+    color: white;
+}
+
+.auth-page-sumbit-btn {
+    padding: 8px;
+    border-radius: 5px;
+    background-color: #202020;
+    color: white;
+    width: -webkit-fill-available;
+    text-align: center;
+    cursor: pointer;
+    transition: all .5s ;
+}
+.auth-page-sumbit-btn:hover {
+    background-color: #303030;
+}

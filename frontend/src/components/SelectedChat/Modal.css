@@ -1,0 +1,90 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal {
+    background-color: #303030;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+  }
+  
+  .modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .modal h2 {
+    margin-top: 0;
+  }
+  
+  .modal p {
+    margin-bottom: 0;
+  }
+  .modal .selected-chat-header-info-img {
+    background-color: #202020;
+  }
+  .modal-selected-chat-desc {
+    margin-top: 20px;
+  }
+  .modal-selected-chat-desc, .modal-selected-chat-link, .modal-selected-chat-users {
+    padding: 10px;
+    
+  }
+
+  .modal-selected-chat-link a {
+    text-decoration: none;
+    color: gray;
+    transition: all .5s;
+  }
+
+  .modal-selected-chat-link a:hover {
+    color: white
+  }
+  .modal-selected-chat-users-list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    gap: 5px;
+  }
+  .modal-selected-chat-users-list-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+  }
+  .modal-selected-chat-users-list-item .selected-chat-header-info-img {
+    width: 40px;
+    height: 40px;
+  }
+  .modal-selected-chat-users-list-item .selected-chat-header-info-img img {
+    width: 40px;
+    height: 40px;
+  }
+  .modal-selected-chat-users-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .modal-selected-chat-users-list-item-tools-item-icon {
+    color: gray;
+    transition: all .3s;
+  }
+  .modal-selected-chat-users-list-item-tools-item-icon.remove:hover {
+    color: red;
+  }
