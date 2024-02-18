@@ -39,7 +39,7 @@ export class ChatServer {
         this.app.post('/login', AuthController.authenticateUser);
     }
 
-    private async socketEvents(): Promise<void> {
+    private socketEvents(): void {
         new SocketConfigurator(this.io, this.database);
     }
 

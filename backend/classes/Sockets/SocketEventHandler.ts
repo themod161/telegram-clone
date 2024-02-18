@@ -228,13 +228,13 @@ export class SocketEventHandler {
                     }
                     
                     let m = chat.messages.push(message);
+                                    
+                    chat.save();
+                    
                     await chat.populate({
                         path: 'messages.from',
                         select: '-password -token -__v'
                     })
-                    
-                    chat.save();
-                    //console.log(data.chat_id, chat._id, socket.rooms);
                     
                     let msg = chat.messages[m-1];
                     this.io.to(chat._id.toString()).emit('selectedChat:message', {
